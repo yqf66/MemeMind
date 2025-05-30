@@ -52,39 +52,45 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">MemeMind: A Large-Scale Multimodal Dataset with Chain-of-Thought Reasoning for Harmful Meme Detection</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Hexiang Gu</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Qifan Yu</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Saihui Hou</a><sup>#</sup>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">zhiqin Fang</a>
+                      <span class="author-block">
+                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Huijia Wu</a><sup>#</sup>,</span>
+                        <span class="author-block">
+                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Zhaofeng He</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Beijing University of Posts and Telecommunications <br>Beijing Normal University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution. <sup>#</sup>Representing the corresponding author.</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- Dataset link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://huggingface.co/datasets/yubb66/MemeMind" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="fas fa-image"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Dataset</span>
                       </a>
                     </span>
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://github.com/yqf66/MemeMind/tree/main/Supplementary" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -100,7 +106,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code(pen soon)</span>
                   </a>
                 </span>
 
@@ -111,7 +117,7 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv(open soon)</span>
                 </a>
               </span>
             </div>
@@ -139,78 +145,66 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Construction process -->
+<section id="section3" class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">MemeMind Construction Process</h2>
+    
+    <div class="flex justify-center mb-4">
+      <img src="static/images/pipeline.png" alt="Pipeline" class="w-full max-w-4xl rounded shadow-md">
+    </div>
+
+    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
+      First, guided by principles of public safety, legal compliance, and ethical considerations, we established clear criteria for identifying harmful content in memes. Subsequently, to construct MemeMind, we collected multiple relevant datasets and systematically reclassified the samples based on the defined criteria. Furthermore, inspired by human reasoning processes, we employed Chain-of-Thought (CoT) reasoning to annotate the data by simulating how humans think and reason. To ensure annotation quality, we conducted manual sampling reviews throughout the entire annotation process.
+    </p>
+  </div>
+</section>
+
+
+<!-- Section4 -->
+<section id="section4" class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">Data Diversity</h2>
+    
+    <div class="flex justify-center mb-4">
+      <img src="static/images/分类例子.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
+    </div>
+
+    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
+      Examples of five categories of harmful memes. Images (a) to (e) are English memes, and (f) to (j) are Chinese memes,
+      each corresponding to a specific type of harmful content: (a, f) Discrimination, (b, g) Offensive, (c, h) Violence, (d, i) Vulgar, (e, j)
+      Dissatisfaction.
+    </p>
+  </div>
+</section>
+
+
+<!-- Section5 -->
+<section id="section5" class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">Our Method</h2>
+    
+    <div class="flex justify-center mb-4">
+      <img src="static/images/method.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
+    </div>
+
+    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
+      During training, the model first undergoes visual understanding enhancement, followed by detection capability refinement. In the inference stage, the model can output the final detection result and optionally provide a detailed Chain-of-Thought reasoning process.
+    </p>
+  </div>
+</section>
+
+
+<!-- Section5 -->
+<section id="section5" class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">Comparison</h2>
+    
+    <div class="flex justify-center mb-4">
+      <img src="static/images/compare.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
