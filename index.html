@@ -145,32 +145,31 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Construction process -->
-<section id="section3" class="py-12 bg-gray-100">
+<!-- Section3 -->
+<section id="section3" class="py-20 bg-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-8 text-center">MemeMind Construction Process</h2>
+    <h2 class="text-4xl font-extrabold mb-8 text-center">MemeMind Construction Process</h2>
     
     <div class="flex justify-center mb-4">
-      <img src="static/images/pipeline.png" alt="Pipeline" class="w-full max-w-4xl rounded shadow-md">
+      <img src="static/images/pipeline.png" alt="Pipeline" class="w-full max-w-3xl rounded shadow-md">
     </div>
 
-    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
+    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-3xl mx-auto">
       First, guided by principles of public safety, legal compliance, and ethical considerations, we established clear criteria for identifying harmful content in memes. Subsequently, to construct MemeMind, we collected multiple relevant datasets and systematically reclassified the samples based on the defined criteria. Furthermore, inspired by human reasoning processes, we employed Chain-of-Thought (CoT) reasoning to annotate the data by simulating how humans think and reason. To ensure annotation quality, we conducted manual sampling reviews throughout the entire annotation process.
     </p>
   </div>
 </section>
 
-
 <!-- Section4 -->
-<section id="section4" class="py-12 bg-white">
+<section id="section4" class="py-20 bg-white">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-8 text-center">Data Diversity</h2>
+    <h2 class="text-4xl font-extrabold mb-8 text-center">Data Diversity</h2>
     
     <div class="flex justify-center mb-4">
-      <img src="static/images/分类例子.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
+      <img src="static/images/分类例子.png" alt="Harmful Meme Categories" class="w-full max-w-3xl rounded shadow-md">
     </div>
 
-    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
+    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-3xl mx-auto">
       Examples of five categories of harmful memes. Images (a) to (e) are English memes, and (f) to (j) are Chinese memes,
       each corresponding to a specific type of harmful content: (a, f) Discrimination, (b, g) Offensive, (c, h) Violence, (d, i) Vulgar, (e, j)
       Dissatisfaction.
@@ -178,33 +177,39 @@
   </div>
 </section>
 
-
 <!-- Section5 -->
-<section id="section5" class="py-12 bg-white">
+<section id="section5" class="py-20 bg-white">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-8 text-center">Our Method</h2>
-    
-    <div class="flex justify-center mb-4">
-      <img src="static/images/method.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
-    </div>
+    <h2 class="text-4xl font-extrabold mb-12 text-center">Our Method</h2>
 
-    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-4xl mx-auto">
-      During training, the model first undergoes visual understanding enhancement, followed by detection capability refinement. In the inference stage, the model can output the final detection result and optionally provide a detailed Chain-of-Thought reasoning process.
-    </p>
-  </div>
-</section>
+    <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-8 max-w-6xl mx-auto">
+      <!-- Image on the left -->
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <img src="static/images/method.png" alt="Method Diagram" class="rounded shadow-md w-full max-w-md">
+      </div>
 
-
-<!-- Section5 -->
-<section id="section5" class="py-12 bg-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-8 text-center">Comparison</h2>
-    
-    <div class="flex justify-center mb-4">
-      <img src="static/images/compare.png" alt="Harmful Meme Categories" class="w-full max-w-4xl rounded shadow-md">
+      <!-- Text on the right -->
+      <div class="w-full lg:w-1/2">
+        <p class="text-gray-700 text-lg text-justify leading-relaxed">
+          During training, the model first undergoes visual understanding enhancement, followed by detection capability refinement. In the inference stage, the model can output the final detection result and optionally provide a detailed Chain-of-Thought reasoning process.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
+
+<!-- Section6 -->
+<section id="section6" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-extrabold mb-8 text-center">Comparison</h2>
+    
+    <div class="flex justify-center mb-4">
+      <img src="static/images/compare.png" alt="Comparison Results" class="w-full max-w-3xl rounded shadow-md">
+    </div>
+  </div>
+</section>
+
 
 
 <!--BibTex citation -->
