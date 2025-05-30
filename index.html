@@ -185,14 +185,12 @@
 <!-- Section5 -->
 <section class="Pipeline">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3 has-text-centered">Our Method</h2>
-      <div id="OurMethod" class="method-container">
-        <div class="image-column">
-          <img src="static/images/method.png" alt="Method Diagram" class="method-image">
-        </div>
-        <div class="text-column">
-          <h2 class="subtitle has-text-left">
+    <div class="container" style="text-align: center;"> <!-- 添加 text-align: center -->
+      <h2 class="title is-3 has-text-centered">Our Method: MemeGuard</h2>
+      <div id="OurMethod" class="Pipeline">
+        <div class="item" style="display: inline-block; margin: 0 auto;"> <!-- 使用 inline-block + margin 自动居中 -->
+          <img src="static/images/method.png" alt="Method Diagram" style="display: block; margin: 0 auto;"> <!-- 块级元素 + 自动边距 -->
+          <h2 class="subtitle has-text-centered">
             During training, the model first undergoes visual understanding enhancement, followed by detection capability refinement. In the inference stage, the model can output the final detection result and optionally provide a detailed Chain-of-Thought reasoning process.
           </h2>
         </div>
