@@ -147,16 +147,21 @@
 
 <!-- Section3 -->
 <section class = "Pipeline">
-  <div class="container mx-auto px-4">
-    <h2 class="title is 3-has-text-centered">MemeMind Construction Process</h2>
-    <div class="flex justify-center mb-4">
-      <img src="static/images/pipeline.png" alt="Pipeline" class="w-full max-w-3xl rounded shadow-md">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is 3-has-text-centered">MemeMind Construction Process</h2>
+      <div id="Pipeline" class="Pipeline">
+        <div class="item">
+          <img src="static/images/pipeline.png" alt="Pipeline">
+          <h2 class="subtitle has-text-centered">
+           First, guided by principles of public safety, legal compliance, and ethical considerations, we established clear criteria for identifying harmful content in memes. Subsequently, to construct MemeMind, we collected multiple relevant datasets and systematically reclassified the samples based on the defined criteria. Furthermore, inspired by human reasoning processes, we employed Chain-of-Thought (CoT) reasoning to annotate the data by simulating how humans think and reason. To ensure annotation quality, we conducted manual sampling reviews throughout the entire annotation process.
+          </h2>
+        </div>
+      </div>
     </div>
-    <p class="text-gray-700 text-lg text-justify leading-relaxed max-w-3xl mx-auto">
-      First, guided by principles of public safety, legal compliance, and ethical considerations, we established clear criteria for identifying harmful content in memes. Subsequently, to construct MemeMind, we collected multiple relevant datasets and systematically reclassified the samples based on the defined criteria. Furthermore, inspired by human reasoning processes, we employed Chain-of-Thought (CoT) reasoning to annotate the data by simulating how humans think and reason. To ensure annotation quality, we conducted manual sampling reviews throughout the entire annotation process.
-    </p>
   </div>
 </section>
+
 
 <!-- Section4 -->
 <section id="section4" class="py-20 bg-white">
@@ -176,18 +181,18 @@
 </section>
 
 <!-- Section5 -->
-<section id="section5" class="py-20 bg-white">
+<section id="section5" class="py-20 bg-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-extrabold mb-12 text-center">Our Method</h2>
+    <h2 class="title mb-16 text-center">Our Method</h2>
 
-    <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-8 max-w-6xl mx-auto">
-      <!-- Image on the left -->
-      <div class="w-full lg:w-1/2 flex justify-center">
-        <img src="static/images/method.png" alt="Method Diagram" class="rounded shadow-md w-full max-w-md">
+    <div class="herobody items-center">
+      <!-- Left: Image -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img src="static/images/method.png" alt="Method Diagram" class="w-full max-w-sm rounded shadow-md">
       </div>
 
-      <!-- Text on the right -->
-      <div class="w-full lg:w-1/2">
+      <!-- Right: Text -->
+      <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12">
         <p class="text-gray-700 text-lg text-justify leading-relaxed">
           During training, the model first undergoes visual understanding enhancement, followed by detection capability refinement. In the inference stage, the model can output the final detection result and optionally provide a detailed Chain-of-Thought reasoning process.
         </p>
@@ -195,6 +200,7 @@
     </div>
   </div>
 </section>
+
 
 
 <!-- Section6 -->
